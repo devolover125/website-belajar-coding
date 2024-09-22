@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran HTML Lengkap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pembelajaran HTML </h1>
+        <nav>
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+        </nav>
+    </header>
+
+    <!-- Konten Pembelajaran HTML -->
+    <div class="content">
+        <h2>Apa itu HTML?</h2>
+        <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. HTML memungkinkan kita untuk menampilkan berbagai elemen seperti teks, gambar, video, dan berbagai elemen lain di halaman website.</p>
+
+        <h2>Struktur Dasar HTML</h2>
+        <p>Berikut adalah contoh struktur dasar dari sebuah dokumen HTML:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Judul Halaman&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Selamat Datang di HTML&lt;/h1&gt;
+        &lt;p&gt;Ini adalah paragraf pertama.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <h2>Atribut HTML</h2>
+        <p>Atribut adalah tambahan pada elemen HTML yang menyediakan informasi tambahan. Atribut selalu ditempatkan di dalam tag pembuka, dan biasanya memiliki pasangan nama dan nilai (name="value"). Berikut adalah beberapa atribut umum:</p>
+
+        <ul>
+            <li><strong>href</strong>: Atribut pada elemen &lt;a&gt; untuk menetapkan URL tujuan.</li>
+            <li><strong>src</strong>: Atribut pada elemen &lt;img&gt; atau &lt;script&gt; untuk menetapkan sumber gambar atau file eksternal.</li>
+            <li><strong>alt</strong>: Atribut pada elemen &lt;img&gt; untuk menetapkan teks alternatif jika gambar tidak bisa dimuat.</li>
+            <li><strong>id</strong>: Atribut unik untuk mengidentifikasi elemen tertentu di halaman HTML.</li>
+            <li><strong>class</strong>: Atribut untuk menetapkan satu atau beberapa kelas CSS pada elemen.</li>
+            <li><strong>style</strong>: Atribut untuk menetapkan gaya inline pada elemen.</li>
+        </ul>
+
+        <h2>Contoh Atribut HTML</h2>
+
+        <h3>1. Atribut href (Hyperlink)</h3>
+        <p>Contoh elemen &lt;a&gt; dengan atribut <strong>href</strong>:</p>
+        
+        <div class="code-block">
+            <pre>
+&lt;a href="https://www.example.com"&gt;Kunjungi Website&lt;/a&gt;
+            </pre>
+        </div>
+
+        <h3>2. Atribut src dan alt pada &lt;img&gt;</h3>
+        <p>Contoh elemen &lt;img&gt; yang menampilkan gambar dengan atribut <strong>src</strong> dan <strong>alt</strong>:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;img src="gambar.jpg" alt="Gambar pemandangan"&gt;
+            </pre>
+        </div>
+
+        <h3>3. Atribut class dan id</h3>
+        <p>Atribut <strong>class</strong> dan <strong>id</strong> sering digunakan untuk memudahkan pengaturan gaya menggunakan CSS atau interaksi dengan JavaScript. Contoh penggunaannya:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;div id="kontainer" class="kotak besar"&gt;
+    Konten di dalam kotak
+&lt;/div&gt;
+            </pre>
+        </div>
+
+        <h2>Elemen HTML Tambahan</h2>
+        <p>Berikut ini adalah beberapa elemen tambahan dalam HTML yang sering digunakan dalam pengembangan web:</p>
+
+        <h3>1. Elemen Tabel (&lt;table&gt;)</h3>
+        <p>HTML menyediakan elemen &lt;table&gt; untuk menampilkan data dalam bentuk tabel. Contoh:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Aldi&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Budi&lt;/td&gt;
+        &lt;td&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </div>
+
+        <h3>2. Elemen Video (&lt;video&gt;)</h3>
+        <p>Elemen &lt;video&gt; digunakan untuk menampilkan video di halaman web. Contoh penggunaan:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    Browser Anda tidak mendukung tag video.
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <h3>3. Elemen Audio (&lt;audio&gt;)</h3>
+        <p>Elemen &lt;audio&gt; digunakan untuk menampilkan kontrol pemutaran audio. Contoh penggunaan:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Browser Anda tidak mendukung tag audio.
+&lt;/audio&gt;
+            </pre>
+        </div>
+
+        <h3>4. Elemen Formulir (&lt;form&gt;)</h3>
+        <p>Formulir memungkinkan pengguna untuk memasukkan data dan mengirimkan data tersebut ke server. Berikut contoh sederhana dari form HTML:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;form action="submit.html" method="post"&gt;
+    &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+    &lt;input type="text" id="nama" name="nama"&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>HTML adalah fondasi dari semua halaman web. Dengan memahami elemen-elemen dan atribut dasar, kita dapat membangun halaman yang fungsional dan menarik. Setelah memahami HTML, kamu bisa melanjutkan ke CSS untuk mendesain halaman dan JavaScript untuk membuat halaman lebih dinamis.</p>
+
+        <h2>Elemen dan Atribut Penting dalam Membuat Website</h2>
+        <p>Selain elemen dasar HTML, ada beberapa elemen dan atribut penting yang sering digunakan dalam pengembangan website:</p>
+        
+        <h3>1. Elemen Head (&lt;head&gt;)</h3>
+        <p>Elemen ini berisi informasi tentang dokumen, termasuk judul, meta, dan link ke CSS. Contoh:</p>
+        <div class="code-block">
+            <pre>
+        &lt;head&gt;
+            &lt;title&gt;Judul Halaman&lt;/title&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+            </pre>
+        </div>
+        
+        <h3>2. Elemen Teks &amp; Heading (&lt;p&gt;, &lt;h1&gt; - &lt;h6&gt;)</h3>
+        <p>Digunakan untuk menampilkan teks. Elemen heading mengatur hierarki konten:</p>
+        <div class="code-block">
+            <pre>
+        &lt;h1&gt;Judul Utama&lt;/h1&gt;
+        &lt;p&gt;Ini…
+        [19.47, 22/9/2024] Li: <h2>Langkah-Langkah Membuat Website</h2>
+        <p>Membuat website terdiri dari beberapa langkah penting. Berikut adalah panduan langkah demi langkah:</p>
+        
+        <h3>1. Merencanakan Konten</h3>
+        <p>Pertama, tentukan tujuan website dan jenis konten yang akan ditampilkan. Buatlah daftar halaman yang diperlukan, seperti halaman utama, tentang, kontak, dan layanan.</p>
+        
+        <h3>2. Mendesain Struktur Halaman</h3>
+        <p>Gambarlah sketsa desain halaman untuk mendapatkan gambaran umum tentang tata letak. Pastikan struktur navigasi mudah diakses.</p>
+        
+        <h3>3. Membuat Halaman HTML</h3>
+        <p>Gunakan pengetahuan HTML untuk membuat halaman sesuai dengan sketsa desain. Pastikan untuk menggunakan elemen dan atribut yang tepat.</p>
+        
+        <h3>4. Menambahkan CSS untuk Styling</h3>
+        <p>Setelah halaman HTML selesai, gunakan CSS untuk mendesain tampilan. Buat file CSS terpisah dan tautkan ke dalam halaman HTML menggunakan tag &lt;link&gt;.</p>
+        
+        <h3>5. Menambahkan Interaktivitas dengan JavaScript</h3>
+        <p>Jika diperlukan, tambahkan JavaScript untuk membuat elemen interaktif, seperti formulir validasi, slideshow gambar, atau interaksi pengguna lainnya.</p>
+        
+        <h3>6. Menguji Website</h3>
+        <p>Uji website di berbagai browser dan perangkat untuk memastikan tampilannya konsisten dan berfungsi dengan baik.</p>
+        
+        <h3>7. Mengunggah Website ke Server</h3>
+        <p>Setelah selesai, unggah file website ke server menggunakan layanan hosting untuk membuatnya dapat diakses secara online.</p>
+        
+        <h2>Alat yang Dapat Digunakan</h2>
+        <ul>
+            <li><strong>Text Editor:</strong> Gunakan text editor seperti Visual Studio Code atau Sublime Text untuk menulis kode.</li>
+            <li><strong>Browser:</strong> Gunakan browser seperti Chrome atau Firefox untuk menguji website.</li>
+            <li><strong>Hosting:</strong> Pilih layanan hosting seperti GitHub Pages, Netlify, atau layanan berbayar untuk mengunggah website.</li>
+        </ul>
+        
+        <h2>Kesimpulan</h2>
+        <p>Membuat website melibatkan perencanaan, pengkodean, dan pengujian. Dengan mengikuti langkah-langkah ini, kamu dapat membangun website yang fungsional dan menarik.</p>
+
+      
+
+        
+        
+    </div>
+
+    <h2>[masukan dari saya]</h2>
+        <p>jika anda ingin belajar tentang sistem pemrograman pahami dulu dasarnya, seperti pemrograman python, html, css, dan javascript element & atributnya dll, jika anda pusing belajar seperti ini semua orang juga merasakannya,didunia ini tidak ada yang instan kecuali mi instan, jangan menyerah terus lawan rasa malas anda jika anda ingin bisa pemrograman, sekian dari saya terimakasih </p>
+
+    <!-- JavaScript untuk interaksi -->
+    <script src="script.js"></script>
+</body>
+</html>

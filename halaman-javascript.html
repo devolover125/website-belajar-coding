@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran JavaScript </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pembelajaran JavaScript Lengkap</h1>
+        <nav>
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+           
+        </nav>
+    </header>
+
+    <!-- Konten Pembelajaran JavaScript -->
+    <div class="content">
+        <h2>Apa itu JavaScript?</h2>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. Dengan JavaScript, kamu dapat memanipulasi elemen HTML, menangani peristiwa, dan berkomunikasi dengan server.</p>
+
+        <h2>Menambahkan JavaScript ke Halaman Web</h2>
+        <p>JavaScript dapat ditambahkan ke halaman HTML dengan menggunakan tag <code>&lt;script&gt;</code>. Berikut adalah contoh cara menambahkannya di dalam tag <code>&lt;head&gt;</code> atau sebelum penutup tag <code>&lt;/body&gt;</code>:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+            </pre>
+        </div>
+
+        <h2>Dasar-Dasar JavaScript</h2>
+        <h3>1. Variabel</h3>
+        <p>Variabel digunakan untuk menyimpan data. Dalam JavaScript, kamu bisa mendeklarasikan variabel menggunakan <code>var</code>, <code>let</code>, atau <code>const</code>.</p>
+
+        <div class="code-block">
+            <pre>
+let nama = "Aldi";
+const umur = 25;
+            </pre>
+        </div>
+
+        <h3>2. Tipe Data</h3>
+        <p>JavaScript memiliki beberapa tipe data, antara lain:</p>
+        <ul>
+            <li><strong>String</strong>: Teks, contoh: <code>"Hello"</code></li>
+            <li><strong>Number</strong>: Angka, contoh: <code>123</code></li>
+            <li><strong>Boolean</strong>: Nilai benar atau salah, contoh: <code>true</code>, <code>false</code></li>
+            <li><strong>Array</strong>: Kumpulan nilai, contoh: <code>[1, 2, 3]</code></li>
+            <li><strong>Object</strong>: Kumpulan pasangan kunci-nilai, contoh: <code>{ nama: "Aldi", umur: 25 }</code></li>
+        </ul>
+
+        <h3>3. Struktur Kontrol</h3>
+        <p>JavaScript mendukung struktur kontrol seperti <code>if</code>, <code>for</code>, dan <code>while</code>. Berikut adalah contoh penggunaan <code>if</code>:</p>
+
+        <div class="code-block">
+            <pre>
+if (umur >= 18) {
+    console.log("Dewasa");
+} else {
+    console.log("Belum Dewasa");
+}
+            </pre>
+        </div>
+
+        <h3>4. Fungsi</h3>
+        <p>Fungsi adalah blok kode yang dapat dipanggil untuk menjalankan tugas tertentu. Berikut adalah contoh fungsi sederhana:</p>
+
+        <div class="code-block">
+            <pre>
+function sapa(nama) {
+    return "Halo, " + nama + "!";
+}
+
+console.log(sapa("Aldi"));
+            </pre>
+        </div>
+
+        <h2>Manipulasi DOM</h2>
+        <p>JavaScript memungkinkan kamu untuk memanipulasi elemen HTML di halaman. Contoh mengubah teks dalam elemen dengan ID tertentu:</p>
+
+        <div class="code-block">
+            <pre>
+document.getElementById("judul").innerText = "Judul Baru";
+            </pre>
+        </div>
+
+        <h2>Event Handling</h2>
+        <p>JavaScript dapat menangani peristiwa, seperti klik pada tombol. Berikut adalah contoh penggunaan event:</p>
+
+        <div class="code-block">
+            <pre>
+document.getElementById("tombol").addEventListener("click", function() {
+    alert("Tombol diklik!");
+});
+            </pre>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>JavaScript adalah bahasa yang sangat kuat untuk membuat halaman web interaktif. Dengan memahami dasar-dasar JavaScript, kamu dapat mulai membuat aplikasi web yang menarik dan dinamis. Selanjutnya, kamu dapat menerapkan pengetahuan ini dalam proyek web yang lebih besar.</p>
+
+        <h2>[masukan saya]</h2>
+        <p>jika anda sudah mempelajari css anda bisa lanjut mempelajari javascript ini soalnya diantara keduanya ini yang penting untuk menghidupkan website anda ya walaupun agak pusing anda bisa seduh kopi dan ngudud dulu (khusus lelaki ya ingat). tapi semangat jangan menyerah oke...</p>
+    </div>
+
+    <!-- JavaScript untuk interaksi -->
+    <script src="script.js"></script>
+</body>
+</html>

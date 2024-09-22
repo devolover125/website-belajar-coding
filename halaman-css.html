@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran CSS Lengkap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pembelajaran CSS </h1>
+        <nav>
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+        </nav>
+    </header>
+
+    <!-- Konten Pembelajaran CSS -->
+    <div class="content">
+        <h2>Apa itu CSS?</h2>
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain tampilan halaman web. CSS mengontrol tata letak, warna, font, dan berbagai aspek lain dari tampilan halaman web.</p>
+
+        <h2>Struktur Dasar CSS</h2>
+        <p>Berikut adalah contoh dasar aturan CSS:</p>
+
+        <div class="code-block">
+            <pre>
+h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}
+            </pre>
+        </div>
+
+        <h2>Elemen dan Properti CSS</h2>
+
+        <h3>1. Selektor CSS</h3>
+        <p>Selektor CSS digunakan untuk memilih elemen HTML tertentu untuk diberikan gaya. Ada beberapa jenis selektor, termasuk:</p>
+        <ul>
+            <li><strong>Selektor Elemen:</strong> Memilih semua elemen tertentu. Misalnya, memilih semua elemen &lt;p&gt;.</li>
+            <li><strong>Selektor ID:</strong> Memilih elemen berdasarkan ID yang bersifat unik.</li>
+            <li><strong>Selektor Kelas:</strong> Memilih elemen berdasarkan kelas yang dapat diterapkan ke beberapa elemen.</li>
+        </ul>
+
+        <div class="code-block">
+            <pre>
+/* Selektor Elemen */
+p {
+    color: green;
+}
+
+/* Selektor ID */
+#main-title {
+    color: red;
+}
+
+/* Selektor Kelas */
+.box {
+    border: 1px solid black;
+}
+            </pre>
+        </div>
+
+        <h3>2. Properti CSS Dasar</h3>
+        <p>Properti CSS digunakan untuk menentukan gaya. Berikut adalah beberapa properti dasar yang sering digunakan:</p>
+        <ul>
+            <li><strong>color:</strong> Mengatur warna teks.</li>
+            <li><strong>font-size:</strong> Mengatur ukuran teks.</li>
+            <li><strong>margin:</strong> Mengatur jarak luar elemen.</li>
+            <li><strong>padding:</strong> Mengatur jarak dalam elemen.</li>
+            <li><strong>background-color:</strong> Mengatur warna latar belakang.</li>
+        </ul>
+
+        <div class="code-block">
+            <pre>
+div {
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+}
+            </pre>
+        </div>
+
+        <h3>3. Responsivitas dengan Media Queries</h3>
+        <p>Media queries digunakan untuk membuat website responsif terhadap berbagai ukuran layar. Contoh:</p>
+
+        <div class="code-block">
+            <pre>
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+            </pre>
+        </div>
+
+        <h3>4. Flexbox</h3>
+        <p>Flexbox adalah teknik layout yang membuat tata letak elemen lebih fleksibel. Contoh penggunaan Flexbox:</p>
+
+        <div class="code-block">
+            <pre>
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+            </pre>
+        </div>
+
+        <h3>5. Grid Layout</h3>
+        <p>Grid Layout adalah sistem tata letak yang berbasis grid dengan baris dan kolom. Contoh Grid Layout:</p>
+
+        <div class="code-block">
+            <pre>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+            </pre>
+        </div>
+
+        <h3>6. Transisi dan Animasi</h3>
+        <p>Transisi dan animasi digunakan untuk membuat perubahan gaya menjadi lebih halus atau menciptakan animasi sederhana. Contoh:</p>
+
+        <div class="code-block">
+            <pre>
+button {
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+div {
+    animation: fadeIn 2s;
+}
+            </pre>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>CSS adalah alat yang kuat untuk mengontrol tampilan halaman web. Dengan menggunakan selektor, properti, dan teknik layout seperti Flexbox dan Grid, kita bisa membuat desain web yang responsif dan menarik.</p>
+
+        <h2>[masukan dari saya]</h2>
+        <p>jika anda sudah mengerti di html anda bisa melanjutkan pembelajaran ke css untuk membuat tampilan anda lebih bagus dan bergaya, anda bisa mencari element sendiri saya hanya membagikan pembelajaran sedikit untuk contoh buat pemula jika saya ada salah bicara mohon maaf saya juga manusia pasti mempunyai kesalahan. sekian dari saya terima kasih</p>
+    </div>
+
+
+    <!-- JavaScript untuk interaksi -->
+    <script src="script.js"></script>
+</body>
+</html>

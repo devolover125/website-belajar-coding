@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe2e7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0eeee ;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    
+    margin: 15px 0;
+    font-size: 24px;
+  display: flex;
+  
+
+}
+
+.course-list {
+    margin: 20px;
+}
+
+.course {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.course img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.course-info {
+    flex-grow: 1;
+}
+
+.course h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.course p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 5px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress-text {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading-screen p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+/* Gaya untuk tombol */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #c3cec4;
+}
+

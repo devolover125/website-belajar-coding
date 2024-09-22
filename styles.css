@@ -1,0 +1,71 @@
+/* Gaya dasar untuk pembelajaran HTML */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.code-block {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: auto
+}
+.back-button{
+    background-color: rgb(243, 234, 234);
+    color:"black";
+}
+.back-button:hover{
+    background-color: blueviolet;
+}
+/* Responsif untuk perangkat dengan lebar layar 768px ke bawah (tablet dan HP) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .code-block {
+        font-size: 14px;
+        overflow-x: auto; /* Mengatasi masalah elemen yang terlalu lebar di layar kecil */
+    }
+}
+
+/* Responsif untuk perangkat dengan lebar layar 480px ke bawah (HP kecil) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}

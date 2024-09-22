@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran MySQL Lengkap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pembelajaran MySQL</h1>
+        <nav>
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+        </nav>
+    </header>
+
+    <!-- Konten Pembelajaran MySQL -->
+    <div class="content">
+        <h2>Apa itu MySQL?</h2>
+        <p>MySQL adalah sistem manajemen basis data relasional (RDBMS) yang menggunakan Structured Query Language (SQL). MySQL sering digunakan untuk menyimpan data aplikasi web.</p>
+
+        <h2>Instalasi MySQL</h2>
+        <p>MySQL dapat diinstal di berbagai sistem operasi. Untuk menginstal MySQL, kamu bisa mengunduh dari <a href="https://www.mysql.com/downloads/">situs resmi MySQL</a> dan mengikuti petunjuk instalasi.</p>
+
+        <h2>Membuat Database dan Tabel</h2>
+        <p>Untuk membuat database baru, kamu dapat menggunakan perintah <code>CREATE DATABASE</code>:</p>
+
+        <div class="code-block">
+            <pre>
+CREATE DATABASE nama_database;
+            </pre>
+        </div>
+
+        <p>Setelah membuat database, kamu bisa membuat tabel dengan perintah <code>CREATE TABLE</code>:</p>
+
+        <div class="code-block">
+            <pre>
+CREATE TABLE nama_tabel (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100),
+    umur INT
+);
+            </pre>
+        </div>
+
+        <h2>Operasi Dasar CRUD</h2>
+        <h3>1. Create (Menambah Data)</h3>
+        <p>Untuk menambah data ke tabel, gunakan perintah <code>INSERT INTO</code>:</p>
+
+        <div class="code-block">
+            <pre>
+INSERT INTO nama_tabel (nama, umur) VALUES ('Aldi', 25);
+            </pre>
+        </div>
+
+        <h3>2. Read (Membaca Data)</h3>
+        <p>Untuk membaca data dari tabel, gunakan perintah <code>SELECT</code>:</p>
+
+        <div class="code-block">
+            <pre>
+SELECT * FROM nama_tabel;
+            </pre>
+        </div>
+
+        <h3>3. Update (Memperbarui Data)</h3>
+        <p>Untuk memperbarui data, gunakan perintah <code>UPDATE</code>:</p>
+
+        <div class="code-block">
+            <pre>
+UPDATE nama_tabel SET umur = 26 WHERE nama = 'Aldi';
+            </pre>
+        </div>
+
+        <h3>4. Delete (Menghapus Data)</h3>
+        <p>Untuk menghapus data, gunakan perintah <code>DELETE</code>:</p>
+
+        <div class="code-block">
+            <pre>
+DELETE FROM nama_tabel WHERE nama = 'Aldi';
+            </pre>
+        </div>
+
+        <h2>Query dan Penggunaan JOIN</h2>
+        <p>Untuk menggabungkan data dari dua tabel, kamu bisa menggunakan <code>JOIN</code>. Berikut adalah contoh penggunaan <code>INNER JOIN</code>:</p>
+
+        <div class="code-block">
+            <pre>
+SELECT a.nama, b.nama_kota
+FROM pengguna a
+INNER JOIN kota b ON a.kota_id = b.id;
+            </pre>
+        </div>
+
+        <h2>Penggunaan Kondisi dan Pengurutan</h2>
+        <p>Untuk menambahkan kondisi dalam query, gunakan <code>WHERE</code>. Untuk mengurutkan hasil, gunakan <code>ORDER BY</code>:</p>
+
+        <div class="code-block">
+            <pre>
+SELECT * FROM nama_tabel
+WHERE umur > 20
+ORDER BY nama ASC;
+            </pre>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>MySQL adalah sistem manajemen basis data yang kuat dan banyak digunakan dalam pengembangan aplikasi web. Dengan memahami dasar-dasar SQL dan operasi CRUD, kamu dapat mulai bekerja dengan database untuk menyimpan dan mengelola data aplikasi.</p>
+
+        <h2>[masukan saya]</h2>
+        <p>oke pembelajarannya sampai sini dulu setelah kalian menguasai semua pemrogramannya kalian bisa melanjutkannya seperti belajar bootstrap framework dan laravel ya pelan" saja dulu oke. jika anda ada pertanyaan anda bisa chat saya melalui di nomor ini: 083849366256...</p>
+    </div>
+
+    <!-- JavaScript untuk interaksi -->
+    <script src="script.js"></script>
+</body>
+</html>

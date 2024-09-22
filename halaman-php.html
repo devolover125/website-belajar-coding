@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran PHP Lengkap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pembelajaran PHP </h1>
+        <nav>
+            <a href="index.html" class="back-button">⬅ Kembali</a>
+           
+        </nav>
+    </header>
+
+    <!-- Konten Pembelajaran PHP -->
+    <div class="content">
+        <h2>Apa itu PHP?</h2>
+        <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk pengembangan web. PHP dapat digunakan untuk membuat aplikasi web dinamis dan berinteraksi dengan database.</p>
+
+        <h2>Menambahkan PHP ke Halaman Web</h2>
+        <p>File PHP biasanya memiliki ekstensi .php. Kode PHP ditulis di dalam tag <code>&lt;?php ?&gt;</code>. Berikut adalah contoh sederhana:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;?php
+    echo "Hello, World!";
+?&gt;
+            </pre>
+        </div>
+
+        <h2>Dasar-Dasar PHP</h2>
+        <h3>1. Variabel</h3>
+        <p>Variabel dalam PHP dimulai dengan tanda dollar (<code>$</code>). Contoh mendeklarasikan variabel:</p>
+
+        <div class="code-block">
+            <pre>
+$nama = "Aldi";
+$umur = 25;
+            </pre>
+        </div>
+
+        <h3>2. Tipe Data</h3>
+        <p>PHP memiliki beberapa tipe data, antara lain:</p>
+        <ul>
+            <li><strong>String</strong>: Teks, contoh: <code>"Hello"</code></li>
+            <li><strong>Integer</strong>: Bilangan bulat, contoh: <code>123</code></li>
+            <li><strong>Float</strong>: Bilangan desimal, contoh: <code>12.34</code></li>
+            <li><strong>Boolean</strong>: Nilai benar atau salah, contoh: <code>true</code>, <code>false</code></li>
+            <li><strong>Array</strong>: Kumpulan nilai, contoh: <code>array(1, 2, 3)</code></li>
+            <li><strong>Object</strong>: Objek dari kelas.</li>
+        </ul>
+
+        <h3>3. Struktur Kontrol</h3>
+        <p>PHP mendukung struktur kontrol seperti <code>if</code>, <code>for</code>, dan <code>while</code>. Berikut adalah contoh penggunaan <code>if</code>:</p>
+
+        <div class="code-block">
+            <pre>
+if ($umur >= 18) {
+    echo "Dewasa";
+} else {
+    echo "Belum Dewasa";
+}
+            </pre>
+        </div>
+
+        <h3>4. Fungsi</h3>
+        <p>Fungsi dalam PHP dideklarasikan dengan kata kunci <code>function</code>. Berikut adalah contoh fungsi sederhana:</p>
+
+        <div class="code-block">
+            <pre>
+function sapa($nama) {
+    return "Halo, " . $nama . "!";
+}
+
+echo sapa("Aldi");
+            </pre>
+        </div>
+
+        <h2>Pengolahan Formulir</h2>
+        <p>PHP sering digunakan untuk memproses data dari formulir HTML. Berikut adalah contoh sederhana:</p>
+
+        <div class="code-block">
+            <pre>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST["nama"];
+    echo "Nama: " . $nama;
+}
+            </pre>
+        </div>
+
+        <h2>Interaksi dengan Database</h2>
+        <p>PHP dapat berinteraksi dengan database menggunakan MySQL. Berikut adalah contoh koneksi dan query sederhana:</p>
+
+        <div class="code-block">
+            <pre>
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Cek koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, nama FROM users";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Nama: " . $row["nama"]. "<br>";
+    }
+} else {
+    echo "0 hasil";
+}
+
+$conn->close();
+            </pre>
+        </div>
+
+        <h2>Kesimpulan</h2>
+        <p>PHP adalah bahasa yang kuat untuk pengembangan web dinamis. Dengan memahami dasar-dasar PHP, kamu dapat mulai membangun aplikasi web yang berinteraksi dengan pengguna dan database. Selanjutnya, kamu bisa menerapkan pengetahuan ini dalam proyek yang lebih kompleks.</p>
+
+        <h2>[masukan saya]</h2>
+        <p>kalo kalian sudah mempelajari javascript kalian bisa belajar tentang php dan mysql lanjut belajarnya jangan patah semangat semua gak ada yang instan oke ingat itu ya...</p>
+    </div>
+
+    <!-- JavaScript untuk interaksi -->
+    <script src="script.js"></script>
+</body>
+</html>
